@@ -1,3 +1,5 @@
+package escola;
+
 import java.util.Scanner;
 
 public class Curso {
@@ -23,7 +25,7 @@ public class Curso {
                     curso = Cursos.JAVASCRIPT;
                     break;
                 default:
-                    System.out.println("Curso invalido");
+                    System.out.println("escola.Curso invalido");
                     break;
             }
         } while (curso == null);

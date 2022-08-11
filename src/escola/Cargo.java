@@ -1,3 +1,5 @@
+package escola;
+
 import java.util.Scanner;
 
 public class Cargo {
@@ -23,7 +25,7 @@ public class Cargo {
                 case 3:
                     cargo = Cargos.COORDENADOR;
                 default:
-                    System.out.println("Cargo invalido");
+                    System.out.println("escola.Cargo invalido");
             }
         }
         while(cargo == null);
