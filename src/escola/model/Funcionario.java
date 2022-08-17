@@ -1,13 +1,15 @@
 package escola.model;
 
+import escola.Assalariado;
 import escola.Cargo;
 
-public class Funcionario {
-    private String nome;
-    final private Long registro;
-    private Long cpf;
-    private Cargo.Cargos cargo;
-    private Double valorHoraAula;
+public class Funcionario implements Assalariado {
+    protected String nome;
+    final protected Long registro;
+    protected Long cpf;
+    protected Cargo.Cargos cargo;
+
+    protected Double valorSalario;
 
     public Funcionario(Long registro){
         this.registro = registro;
@@ -16,10 +18,6 @@ public class Funcionario {
     public Funcionario(Long registro, String nome){
         this.registro = registro;
         this.nome = nome;
-    }
-
-    public Double valorHoraAulaAuxiliar(){
-        return this.valorHoraAula/2;
     }
 
     public String getNome() {
@@ -50,11 +48,11 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public Double getValorHoraAula() {
-        return valorHoraAula;
+    public Double getValorSalario() {
+        return valorSalario;
     }
 
-    public void setValorHoraAula(Double valorHoraAula) {
-        this.valorHoraAula = valorHoraAula;
+    public double calcularValor(double horasTrabalhadas) {
+        return valorSalario;
     }
 }
