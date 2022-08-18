@@ -1,10 +1,10 @@
 package escola;
 
 import escola.model.Aluno;
-import escola.service.AlunoService;
+import escola.view.AlunoView;
 
 public class Main {
     public static void main(String[] args){
-      Aluno aluno = AlunoService.cadastroAluno();
+      Aluno aluno = AlunoView.cadastroAluno();
     }
 }

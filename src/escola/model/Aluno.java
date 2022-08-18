@@ -6,7 +6,7 @@ public class Aluno {
     public String nome;
     public Integer idade;
     public Long cpf;
-    public Boolean ativado;
+    private Boolean ativado;
     public Long registro;
     public int dataMatricula;
     public int validadeMatricula;
@@ -17,6 +17,14 @@ public class Aluno {
         for(int i = 0; i < this.notas.length; i++){
             System.out.println(notas[i]);
         }
+    }
+
+    public Boolean getAtivado() {
+        return ativado;
+    }
+
+    public void setAtivado(Boolean ativado) {
+        this.ativado = ativado;
     }
 }
 
