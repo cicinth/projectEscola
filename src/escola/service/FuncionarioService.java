@@ -25,16 +25,16 @@ public class FuncionarioService {
 
         funcionario.setCargo(Cargo.escolhaCargo());
 
-        try {
-            funcionario.setValorHoraAula(adicionarValorHoraAula(funcionario.getCargo()));
-        }catch (Exception exception){
-            System.out.println(exception.getMessage());
-        }
+//        try {
+//            funcionario.setValorHoraAula(adicionarValorHoraAula(funcionario.getCargo()));
+//        }catch (Exception exception){
+//            System.out.println(exception.getMessage());
+//        }
 
         System.out.println(funcionario.getNome());
         System.out.println(funcionario.getRegistro());
         System.out.println(funcionario.getCpf());
-        System.out.println(funcionario.getValorHoraAula());
+//        System.out.println(funcionario.getValorHoraAula());
         System.out.println(funcionario.getCargo());
         calcularValorReceber(15, new Professor(1L));
         scanner.close();
@@ -56,7 +56,7 @@ public class FuncionarioService {
             Double valorAdicional = horasTrabalhadas * professor.getValorHora() * (professor.isTitular() ? 1 : .5);
             valorAReceber += valorAdicional;
         }
-        return funcionario.calcularValorAReceber();
+//        return funcionario.calcularValorAReceber();
         return valorAReceber;
     }
 
