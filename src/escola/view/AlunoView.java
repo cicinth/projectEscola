@@ -19,7 +19,7 @@ public class AlunoView {
         aluno.cpf = scanner.nextLong();
 
         System.out.println("Digite o registro do aluno");
-        aluno.registro = scanner.nextLong();
+        aluno.setRegistro(scanner.nextLong());
 
         scanner.close();
         return aluno;
@@ -30,7 +30,7 @@ public class AlunoView {
         System.out.println("Idade do aluno: " + aluno.idade);
         System.out.println("Cpf do aluno: " + aluno.cpf);
         System.out.println("Ativacao do aluno: " + aluno.getAtivado());
-        System.out.println("Registro do aluno: " + aluno.registro);
+        System.out.println("Registro do aluno: " + aluno.getRegistro());
     }
 
     public static Integer[] incluirNotas(Aluno aluno){

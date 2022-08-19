@@ -14,11 +14,11 @@ public class AlunoService {
 
     public void ativar(Aluno aluno) throws ItemNaoExistenteException {
         aluno.setAtivado(true);
-        repository.alterar(aluno.registro, aluno);
+        repository.alterar(aluno.getRegistro(), aluno);
     }
 
     public void desativar(Aluno aluno) throws ItemNaoExistenteException {
         aluno.setAtivado(false);
-        repository.alterar(aluno.registro, aluno);
+        repository.alterar(aluno.getRegistro(), aluno);
     }
 }

@@ -1,8 +1,8 @@
 package escola.repository;
 
-import escola.model.Aluno;
+import escola.model.Coordenador;
 
-public class AlunoRepository extends MemoryRepository<Long, Aluno> {
+public class CoordenadorRepository extends MemoryRepository<Long, Coordenador> {
     private Long ultimaChave = 0L;
 
     @Override
@@ -11,7 +11,7 @@ public class AlunoRepository extends MemoryRepository<Long, Aluno> {
     }
 
     @Override
-    protected void setChave(Aluno item, Long chave) {
+    protected void setChave(Coordenador item, Long chave) {
         item.setRegistro(chave);
     }
 }

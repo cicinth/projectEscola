@@ -7,7 +7,16 @@ public class Aluno {
     public Integer idade;
     public Long cpf;
     private Boolean ativado;
-    public Long registro;
+    private Long registro;
+
+    public Long getRegistro() {
+        return registro;
+    }
+
+    public void setRegistro(Long registro) {
+        this.registro = registro;
+    }
+
     public int dataMatricula;
     public int validadeMatricula;
     public Curso.Cursos curso;

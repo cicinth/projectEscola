@@ -26,6 +26,22 @@ public class Turma {
         alunos.add(aluno);
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
     public int numeroDeAlunos() {
         return alunos.size();
     }

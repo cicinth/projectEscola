@@ -34,7 +34,7 @@ public abstract class MemoryRepository<K,E> {
     }
 
     public List<E> listar() {
-        ArrayList<E> lista = new ArrayList<>();
+        List<E> lista = new ArrayList<>(dados.values());
         lista.addAll(dados.values());
         return lista;
     }

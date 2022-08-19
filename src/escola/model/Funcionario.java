@@ -5,7 +5,7 @@ import escola.Cargo;
 
 public class Funcionario implements Assalariado {
     protected String nome;
-    final protected Long registro;
+    protected Long registro;
     protected Long cpf;
     protected Cargo.Cargos cargo;
 
@@ -30,6 +30,10 @@ public class Funcionario implements Assalariado {
 
     public Long getRegistro() {
         return registro;
+    }
+
+    public void setRegistro(Long registro) {
+        this.registro = registro;
     }
 
     public Long getCpf() {
